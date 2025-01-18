@@ -15,29 +15,17 @@
 
 main{
     display: grid;
-    grid-template-columns: 1fr 7fr;
-    min-height: 100vh;
-}
-
-/***************
- left side start
-***************/
-.left, .right{
-    min-height: 100dvh;
+    grid-template-columns: 170px 7fr;
+    /* min-height: 100vh; */
 }
 
 /***********
  top start
 ************/
 .left{
-    height: 100vh;
     background-color: var(--left-background-color);
     min-height: 100vh;
 }
-
-/* .menu{
-    border: 2px solid black;
-} */
 
 .top{
     color: var(--font-color);
@@ -158,7 +146,7 @@ right side start
 ***************/
 
 .right{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: var(--right-background-color);
     background: linear-gradient(157deg, rgba(17,42,55,1) 0%, rgba(6,13,16,1) 35%, rgba(3,3,3,1) 100%);
 }
@@ -350,3 +338,9 @@ right side start
 /***************
 right side end 
 ***************/
+
+@media(max-width: 1000px){
+    .cards{
+        flex-wrap: wrap;
+    }
+}
